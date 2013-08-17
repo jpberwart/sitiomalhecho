@@ -529,3 +529,29 @@ table {
 .site-footer a {
   color: white;
 }
+
+.site-info {
+  width: 25%;
+  float: right;
+  text-align: center;
+}
+
+.container::before, .container::after {
+  content: " ";
+  display: table;
+}
+
+.site-reason {
+  width: 75%;
+  float: left;
+}
+
+.container::after {
+  clear: both;
+}
+
+body > footer {
+  background-color: black;
+  padding: 16px 30px 16px 30px;
+  color: white;
+}
