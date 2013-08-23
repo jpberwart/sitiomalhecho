@@ -3,14 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>Manga-zoo ®</title>
-	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
-<div>
-	<div class="site-nav">
-		<div class="navbar-header">
+<header>
+	<nav class="site-nav">
+		<h3 class="navbar-header">
 			<a class="navbar-brand">Manga-zoo</a>
-		</div>
+		</h3>
 		<ul class="site-nav--links">
 			<li class="active"><a>Inicio</a></li>
 			<li><a>Nosotros</a></li>
@@ -20,130 +22,115 @@
 			<li><a>Registro</a></li>
 			<li><a>Logueo</a></li>
 		</ul>
-	</div>
-</div>
-<div>
-	<div style="padding:100px 0px;" class="landing-image">
+	</nav>
+</header>
+<div id="main" class="totalRow"><!--#main-->
+	<section id="Portada" class="landing-image Step1"><!--#Portada-->
 		<div class="container">
-				<div>
-					<div>
-					<div style="color: black;" class="jumbotron jumbotron-clear landing-text">
-						<p><b style="font-size:63px;">Manga-zoo</b></p>
-							<p style="font-size:28px; font-weight:200; margin-bottom: 20px;" >Maga-zoo te permite activar tu rostro y el de tus amigos al fiel estilo manga. Puedes tomarte fotografías y subirlas a Instagram como si fueran sketchs perfilados para una historieta. Con Manga-zoo podrás ser un personaje manga e interactuar con otros personajes que usan la aplicación.</p>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div>
-						<a>
-							<img style="height:75px;" src="storebadge.svg">
-						</a>
-					</div>
-				</div>
+			<h1 class="Step2 fadeInleft">Manga-zoo</h1>
+			<h3 class="Step3 fadeInleft">Maga-zoo te permite activar tu rostro y el de tus amigos al fiel estilo manga. Puedes tomarte fotografías y subirlas a Instagram como si fueran sketchs perfilados para una historieta. Con Manga-zoo podrás ser un personaje manga e interactuar con otros personajes que usan la aplicación.
+			</h3>
+			<a href="#"><img class="appstore Step4 fadeInleft" src="images/storebadge.png"  border="0"></a>
 		</div>
-	</div>
-	<div>
-		<div class="features">
-			<div>
-				<div class="item active">
-				<div class="container">
-						<div>
-						<div>
-							<p><b style="font-size:38px;">+ 450 estilos de manga</b></p>
-								<p>Maga-zoo permite trazar tu rostro con los diferentes estilos de los maestros del manga. Cada estilo es único y te dará un enfoque personalizado para la representación de tu avatar.</p>
-						</div>
-							<div>
-						<img src="surface.png">
-							</div>
-					</div>
-					</div>
+	</section><!--Portada-->
+
+	<section id="Carroussel" class="features totalRow"><!--#Carroussel-->
+		
+		<div class="item active Step1" id="First">
+			<div class="container">
+				<div class="left-side">
+					<h3 class="Step2">+ 450 estilos de manga</h3>
+					<p class="Step3">Maga-zoo permite trazar tu rostro con los diferentes estilos de los maestros del manga. Cada estilo es único y te dará un enfoque personalizado para la representación de tu avatar.</p>
 				</div>
-				<div class="item">
-					<div class="container">
-					<div>
-						<div>
-							<b style="font-size:38px;">Interacción en tiempo real</b>
-								<p>Todos los personajes que usan la aplicación pueden interactuar con otros alrededor del mundo. Varios artistas de manga se conectarán durante el día para buscar modelos para un próximo personaje. tú podrías ser uno de ellos</p>
-							</div>
-							<div>
-						<img src="macbook.png">
-							</div>
-					</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="container">
-						<div>
-						<div>
-								<b style="font-size:38px;">100 TB de espacio para tu vida manga</b>
-								<p>El modo grabación de Manga-zoo permitirá que grabes imágenes y videos de tu vida y compartirlos en los formatos que desees. Mangazoo además permite exportar los archivos a formato drone, que permitirá ser decodificado por extraterrestres.</p>
-							</div>
-						<div>
-								<img src="ipad.png">
-					</div>
-					</div>
-					</div>
+				<img src="images/surface.png" class="Step4">
 			</div>
-	</div>
 		</div>
-	</div>
-	<div style="margin: 50px 0 50px 0;">
-		<div class="container">
-			<div>
-				<div>
-					<p style="font-size:21px; font-weight:200; margin-bottom: 20px;">Dibujas manga? Sé parte del equipo!<a class="btn btn-primary pull-right">Más información</a></p>
+		<div class="item Step1" id="Second">
+			<div class="container">
+				<div class="left-side">
+					<h3 class="Step2">Interacción en tiempo real</h3>
+					<p class="Step3">Todos los personajes que usan la aplicación pueden interactuar con otros alrededor del mundo. Varios artistas de manga se conectarán durante el día para buscar modelos para un próximo personaje. tú podrías ser uno de ellos</p>
 				</div>
+				<img src="images/macbook.png" class="Step4">
 			</div>
+		</div>
+		<div class="item Step1" id="Thidh">
+			<div class="container">
+				<div class="left-side">
+					<h3 class="Step2">100 TB de espacio para tu vida manga</h3>
+					<p class="Step3">El modo grabación de Manga-zoo permitirá que grabes imágenes y videos de tu vida y compartirlos en los formatos que desees. Mangazoo además permite exportar los archivos a formato drone, que permitirá ser decodificado por extraterrestres.</p>
 				</div>
+				<img src="images/ipad.png" class="Step4">
+			</div>
+		</div>
+		<div class="navCarou">
+			<ul>
+				<li class="navibtn"><a href="#First" class="botn activeBtn"></a></li>
+				<li class="navibtn"><a href="#Second" class="botn "></a></li>
+				<li class="navibtn"><a href="#Thidh" class="botn "></a></li>
+			</ul>
+		</div>
+	</section><!--fin Carroussel-->
+	
+	<section id="thirdRow" class="totalRow"><!--thirdRow-->
+		<div id="manga" class="container">
+			<h4>Dibujas manga? Sé parte del equipo!</h4>
+			<a class="btn btn-primary pull-right">Más información</a>
+		</div>
 		<hr>
-	</div>
-	<div class="testimonials container">
-				<p style="font-size:21px; font-weight:200; margin-bottom: 20px;">Testimonios</p>
-		<div>
-			<div>
+	</section>
+	<section class="testimonials totalRow">
+		<div class="container">
+			<h4>Testimonios</h4>
+			<figure class="testimonio col">
 				<p>Con Maga-zoo uno descubre que tenía un yo oculto.</p>
-							<b class="source">Chris Peterson, New York Times</b>
-			</div>
-			<div>
+				<small class="source">Chris Peterson, New York Times</small>
+			</figure>
+			<figure  class="testimonio col">
 				<p>Una aplicación maravillosa. El nuevo second life</p>
-				<b class="source">Martha Smith, Washington Post</b>
-			</div>
-			<div>
+				<small class="source">Martha Smith, Washington Post</small>
+			</figure>
+			<figure class="testimonio col">
 				<p>Una aplicación que todo fan del manga debería tener.</p>
-					<b class="source">Josh Brown, Techcruch</b>
-			</div>
+				<small class="source">Josh Brown, Techcruch</small>
+			</figure>
 		</div>
+	</section>
+</div><!--main-->
+<footer class="site-footer totalRow">
+	<div class="container site-links">
+		  <div class="col4">
+		  	<ul>
+				<li><a href="#">Producto</a></li>
+		  		<li><a href="#">Negocios</a></li>
+		  		<li><a href="#">Desarrolladores</a></li>
+		  		<li><a href="#">Ayuda</a></li>
+		  	</ul>
+		  </div>
+		  
+		  <div class="col4">
+		  	
+		  	<ul>
+				<li><a href="#">Aplicación</a></li>
+		  		<li><a href="#">Sobre Manga-zoo</a></li>
+		  		<li><a href="#">Privacidad</a></li>
+		  		<li><a href="#">Términos</a></li>
+		  	</ul>
+		  </div>
+		  
+		  <div class="col4">
+		  	
+		  	<ul>
+				<li><a href="#">Comunidad</a></li>
+		  		<li><a href="#">Twitter</a></li>
+		  		<li><a href="#">Facebook</a></li>
+		  		<li><a href="#">Google Plus</a></li>
+		  		<li><a href="#">Contáctanos</a></li>
+		  	</ul>
+		  </div>
+	   		<div class="site-info col4">
+	   			<p><a href="http://rcp.pe"><img src="images/rcp.png" border="0"></a></p>
+	   			<p><small>Derechos reservados © 2013</small></p>
+	   		</div>
 	</div>
-</div>
-<div class="site-footer">
-	<div class="container">
-				<div class="site-links">
-			<div>
-			<div>
-			<div>Producto</div>
-				<div><a>Negocios</a></div>
-					<div>	<a>Desarrolladores</a></div>
-			<div><a>Ayuda</a></div>
-			</div>
-				</div>
-			<div>
-			<div>
-				<div>Aplicación</div>
-			<div><a>Sobre Manga-zoo</a></div>
-				<div>	<a>Privacidad</a></div>
-			<div><a>Términos</a></div>
-				</div>
-			</div>
-				<div>
-			<div>
-			<div>Comunidad</div>
-				<div><a>Twitter</a>
-			</div>
-			<div><a>Facebook</a></div>
-				<div><a>Google Plus</a></div>
-			<div><a>Contáctanos</a>
-			</div>
-				</div>
-			</div>
-		</div>
-	</div>
+</footer>
